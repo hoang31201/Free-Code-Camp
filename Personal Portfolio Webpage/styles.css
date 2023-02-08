@@ -142,9 +142,9 @@ nav {
   font-weight: bold;
 }
 
-/* ABOUT ME */
+/* WELCOME SECTION */
 
-#about-me {
+#welcome-section {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -384,7 +384,7 @@ nav {
   transition: transform 450ms, opacity 300ms;
 }
 
-.project__description--title {
+.project-tile {
   font-size: 40px;
 }
 
@@ -397,7 +397,7 @@ nav {
   margin-right: 16px;
 }
 
-.project__description--title,
+.project-tile,
 .project__description--sub-title,
 .project__description--para,
 .project__description--link {
@@ -512,7 +512,7 @@ footer {
     justify-content: center;
   }
 
-  .project__description--title {
+  .project-tile {
     font-size: 32px;
     line-height: 1;
     text-align: center;

@@ -60,3 +60,21 @@ const increment = (number, value) => number + value;
 // Only change code below this line
 const increment = (number, value = 1) => number + value;
 // Only change code above this line
+
+const sum = (x, y, z) => {
+  const args = [x, y, z];
+  return args.reduce((a, b) => a + b, 0);
+};
+
+const sum = (...args) => {
+  let s = 0;
+  for (let i = 0; i < args.length; i++) {
+    s += args[i];
+  }
+  return s;
+};
+
+const sum = (...args) => {
+  return args.reduce((a, b) => a + b, 0);
+}
+console.log(sum(1, 2, 3)); // 6

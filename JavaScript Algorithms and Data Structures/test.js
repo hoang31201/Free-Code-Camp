@@ -76,5 +76,19 @@ const sum = (...args) => {
 
 const sum = (...args) => {
   return args.reduce((a, b) => a + b, 0);
-}
+};
 console.log(sum(1, 2, 3)); // 6
+
+const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+let arr2;
+
+arr2 = []; // Change this line
+
+console.log(arr2);
+
+const arr1 = ["JAN", "FEB", "MAR", "APR", "MAY"];
+//let arr2;
+
+const arr2 = [...arr1]; // Change this line
+
+console.log(arr2);

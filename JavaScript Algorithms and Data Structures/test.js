@@ -93,10 +93,11 @@ const arr2 = [...arr1]; // Change this line
 
 console.log(arr2);
 
+//Destructuring assignment is special syntax introduced in ES6, for neatly assigning values taken directly from an object.
 const HIGH_TEMPERATURES = {
   yesterday: 75,
   today: 77,
-  tomorrow: 80
+  tomorrow: 80,
 };
 
 // Only change code below this line
@@ -109,7 +110,7 @@ const tomorrow = HIGH_TEMPERATURES.tomorrow;
 const HIGH_TEMPERATURES = {
   yesterday: 75,
   today: 77,
-  tomorrow: 80
+  tomorrow: 80,
 };
 
 // Only change code below this line

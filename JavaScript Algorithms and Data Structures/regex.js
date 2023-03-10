@@ -41,3 +41,11 @@ let result = twinkleStar; // Change this line
 let twinkleStar = "Twinkle, twinkle, little star";
 let starRegex = /twinkle/gi; // Change this line
 let result = twinkleStar.match(starRegex); // Change this line
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /change/; // Change this line
+let result = unRegex.test(exampleStr);
+
+let exampleStr = "Let's have fun with regular expressions!";
+let unRegex = /.un/; // Change this line
+let result = unRegex.test(exampleStr);

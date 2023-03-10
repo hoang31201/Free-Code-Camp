@@ -276,9 +276,9 @@ const createPerson = (name, age, gender) =>
 // Only change code below this line
 const bicycle = {
   gear: 2,
-  setGear: function(newGear) {
+  setGear: function (newGear) {
     this.gear = newGear;
-  }
+  },
 };
 // Only change code above this line
 bicycle.setGear(3);
@@ -289,7 +289,7 @@ const bicycle = {
   gear: 2,
   setGear(newGear) {
     this.gear = newGear;
-  }
+  },
 };
 // Only change code above this line
 bicycle.setGear(3);
@@ -303,7 +303,7 @@ class Vegetable {
 }
 // Only change code above this line
 
-const carrot = new Vegetable('carrot');
+const carrot = new Vegetable("carrot");
 console.log(carrot.name); // Should display 'carrot'
 
 // Only change code below this line
@@ -313,11 +313,11 @@ class Thermostat {
   }
   //getter
   get temperature() {
-    return 5/9 * (this._temp - 32);
+    return (5 / 9) * (this._temp - 32);
   }
   //setter
   set temperature(updatedTemp) {
-    this._temp = updatedTemp * 9.0 / 5 + 32;
+    this._temp = (updatedTemp * 9.0) / 5 + 32;
   }
 }
 // Only change code above this line
@@ -329,19 +329,19 @@ temp = thermos.temperature; // 26 in Celsius
 
 export const uppercaseString = (string) => {
   return string.toUpperCase();
-}
+};
 
 export const lowercaseString = (string) => {
-  return string.toLowerCase()
-}
+  return string.toLowerCase();
+};
 
-import { uppercaseString, lowercaseString } from './string_functions.js';  
+import { uppercaseString, lowercaseString } from "./string_functions.js";
 // Only change code above this line
 
 uppercaseString("hello");
 lowercaseString("WORLD!");
 
-import * as stringFunctions from './string_functions.js';
+import * as stringFunctions from "./string_functions.js";
 // Only change code above this line
 
 stringFunctions.uppercaseString("hello");
@@ -351,26 +351,24 @@ function subtract(x, y) {
   return x - y;
 }
 
-export default function(x, y) {
+export default function (x, y) {
   return x - y;
 }
 
-import subtract from "./math_functions.js";  
+import subtract from "./math_functions.js";
 // Only change code above this line
 
-subtract(7,4);
+subtract(7, 4);
 
-const makeServerRequest = new Promise((resolve, reject) => {
-
-});
+const makeServerRequest = new Promise((resolve, reject) => {});
 
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer represents a response from a server
   let responseFromServer;
-    
-  if(responseFromServer) {
+
+  if (responseFromServer) {
     // Change this line
-  } else {  
+  } else {
     // Change this line
   }
 });
@@ -378,11 +376,11 @@ const makeServerRequest = new Promise((resolve, reject) => {
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer represents a response from a server
   let responseFromServer;
-    
-  if(responseFromServer) {
+
+  if (responseFromServer) {
     // Change this line
     resolve("We got the data");
-  } else {  
+  } else {
     // Change this line
     reject("Data not received");
   }
@@ -391,11 +389,13 @@ const makeServerRequest = new Promise((resolve, reject) => {
 const makeServerRequest = new Promise((resolve, reject) => {
   // responseFromServer is set to true to represent a successful response from a server
   let responseFromServer = true;
-    
-  if(responseFromServer) {
+
+  if (responseFromServer) {
     resolve("We got the data");
-    makeServerRequest.then(result => { console.log(result) });
-  } else {  
+  } else {
     reject("Data not received");
   }
+  makeServerRequest.then((result) => {
+    console.log(result);
+  });
 });

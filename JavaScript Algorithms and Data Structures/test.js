@@ -147,11 +147,11 @@ const { today: highToday, tomorrow: highTomorrow } = HIGH_TEMPERATURES;
 const LOCAL_FORECAST = {
   yesterday: { low: 61, high: 75 },
   today: { low: 64, high: 77 },
-  tomorrow: { low: 68, high: 80 }
+  tomorrow: { low: 68, high: 80 },
 };
 
 // Only change code below this line
-  
+
 const lowToday = LOCAL_FORECAST.today.low;
 const highToday = LOCAL_FORECAST.today.high;
 
@@ -160,16 +160,19 @@ const highToday = LOCAL_FORECAST.today.high;
 const LOCAL_FORECAST = {
   yesterday: { low: 61, high: 75 },
   today: { low: 64, high: 77 },
-  tomorrow: { low: 68, high: 80 }
+  tomorrow: { low: 68, high: 80 },
 };
 
 // Only change code below this line
-  
-const { today: { low: lowToday, high: highToday }} = LOCAL_FORECAST;
+
+const {
+  today: { low: lowToday, high: highToday },
+} = LOCAL_FORECAST;
 
 // Only change code above this line
 
-let a = 8, b = 6;
+let a = 8,
+  b = 6;
 // Only change code below this line
 [a, b] = [b, a];
 console.log(a, b);
@@ -202,11 +205,11 @@ const stats = {
   median: 34.54,
   mode: 23.87,
   min: -0.75,
-  average: 35.85
+  average: 35.85,
 };
 
 // Only change code below this line
-const half = (stats) => (stats.max + stats.min) / 2.0; 
+const half = (stats) => (stats.max + stats.min) / 2.0;
 // Only change code above this line
 
 const stats = {
@@ -215,17 +218,17 @@ const stats = {
   median: 34.54,
   mode: 23.87,
   min: -0.75,
-  average: 35.85
+  average: 35.85,
 };
 
 // Only change code below this line
-const half = ({max, min}) => (max + min) / 2.0;
+const half = ({ max, min }) => (max + min) / 2.0;
 // Only change code above this line
 
 const result = {
   success: ["max-length", "no-amd", "prefer-arrow-functions"],
   failure: ["no-var", "var-on-top", "linebreak"],
-  skipped: ["no-extra-semi", "no-dup-keys"]
+  skipped: ["no-extra-semi", "no-dup-keys"],
 };
 function makeList(arr) {
   // Only change code below this line
@@ -240,13 +243,13 @@ const failuresList = makeList(result.failure);
 const result = {
   success: ["max-length", "no-amd", "prefer-arrow-functions"],
   failure: ["no-var", "var-on-top", "linebreak"],
-  skipped: ["no-extra-semi", "no-dup-keys"]
+  skipped: ["no-extra-semi", "no-dup-keys"],
 };
 function makeList(arr) {
   // Only change code below this line
   const failureItems = [arr.length];
   for (let a = 0; a < arr.length; a++) {
-    failureItems[a] = (`<li class="text-warning">${arr[a]}</li>`);
+    failureItems[a] = `<li class="text-warning">${arr[a]}</li>`;
   }
   // Only change code above this line
 
@@ -254,3 +257,18 @@ function makeList(arr) {
 }
 
 const failuresList = makeList(result.failure);
+
+const createPerson = (name, age, gender) => {
+  // Only change code below this line
+  return {
+    name: name,
+    age: age,
+    gender: gender,
+  };
+  // Only change code above this line
+};
+
+const createPerson = (name, age, gender) =>
+  // Only change code below this line
+  ({ name, age, gender });
+// Only change code above this line

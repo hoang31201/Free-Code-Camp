@@ -248,3 +248,23 @@ let result = reRegex.test(repeatNum);
 let repeatNum = "42 42 42";
 let reRegex = /^(\d+) \1 \1$/; // Change this line
 let result = reRegex.test(repeatNum);
+
+// Use Capture Groups to Search and Replace
+let str = "one two three";
+let fixRegex = /change/; // Change this line
+let replaceText = ""; // Change this line
+let result = str.replace(fixRegex, replaceText);
+
+let str = "one two three";
+let fixRegex = /(\w+)\s(\w+)\s(\w+)/; // Change this line
+let replaceText = "$3 $2 $1"; // Change this line
+let result = str.replace(fixRegex, replaceText);
+
+// Remove Whitespace from Start and End
+let hello = "   Hello, World!  ";
+let wsRegex = /change/; // Change this line
+let result = hello; // Change this line
+
+let hello = "   Hello, World!  ";
+let wsRegex = /^\s+|\s+$/g; // Change this line
+let result = hello.replace(wsRegex, ""); // Change this line
